@@ -1,6 +1,8 @@
 # Meu Projeto Web
 
 Bem-vindo ao meu projeto web! Este README irá guiá-lo pelos conceitos avançados de CSS e HTML que foram utilizados neste projeto.
+![image](https://github.com/erikpablo/Fotoblog/assets/159021301/71c639c9-fca6-47e9-a0d3-b49adc3a3ba9)
+
 
 ## Conteúdos
 
@@ -15,115 +17,50 @@ Bem-vindo ao meu projeto web! Este README irá guiá-lo pelos conceitos avançad
 
 ### Animações
 
-As animações em CSS permitem a criação de efeitos dinâmicos que tornam a experiência do usuário mais interativa e interessante. Utilizamos a propriedade `@keyframes` para definir as etapas da animação.
+<p>As animações em CSS permitem a criação de efeitos dinâmicos que tornam a experiência do usuário mais interativa e interessante. Utilizamos a propriedade `@keyframes` para definir as etapas da animação.</p> 
 
-``css
-/* Definindo a animação */
-@keyframes exemplo {
-  0% { background-color: red; }
-  50% { background-color: yellow; }
-  100% { background-color: green; }
-}
+<h3>css</h3>
 
-/* Aplicando a animação a um elemento */
-.elemento-animado {
-  animation-name: exemplo;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-Grid Layout
-O Grid Layout do CSS é uma poderosa ferramenta para criar layouts complexos de forma simples e intuitiva. Utilizamos a propriedade display: grid para ativar o modo grid e definir linhas e colunas com grid-template-rows e grid-template-columns.
+![image](https://github.com/erikpablo/Fotoblog/assets/159021301/09afa35e-4d43-4d4e-bc33-b02839b4fbad)
 
-css
-Copiar código
-/* Definindo o container grid */
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
+  
+## Grid Layout
 
-/* Estilizando os itens do grid */
-.item {
-  background-color: lightblue;
-  padding: 20px;
-  text-align: center;
-}
-Transições
+<p> 
+O Grid Layout do CSS é uma poderosa ferramenta para criar layouts complexos de forma simples e intuitiva. Utilizamos a propriedade display: grid para ativar o modo grid e definir linhas e colunas com grid-template-rows e grid-template-columns.]
+</p>
+
+<h3>css</h3>
+
+![image](https://github.com/erikpablo/Fotoblog/assets/159021301/a83a728f-1ffa-44a0-b7f2-ed660f42007f)
+
+
+## Transições
+
 Transições em CSS permitem alterar suavemente uma propriedade CSS de um valor para outro ao longo do tempo. Utilizamos a propriedade transition para definir a duração e as propriedades a serem animadas.
 
-css
-Copiar código
-/* Definindo a transição */
-.elemento-transicao {
-  background-color: blue;
-  transition: background-color 0.5s ease;
-}
+<h3>css</h3>
 
-/* Estado do elemento ao passar o mouse */
-.elemento-transicao:hover {
-  background-color: green;
-}
-Variáveis CSS
+![image](https://github.com/erikpablo/Fotoblog/assets/159021301/57888eb1-0a34-4b12-8605-b53ba6e742f4)
+
+
+## Variáveis CSS
 As variáveis CSS (ou custom properties) permitem a reutilização de valores CSS em todo o documento, tornando o código mais limpo e fácil de manter. Definimos variáveis com --nome-da-variavel e acessamos com var(--nome-da-variavel).
 
-css
-Copiar código
-/* Definindo variáveis no :root */
-:root {
-  --cor-principal: #3498db;
-  --cor-secundaria: #2ecc71;
-}
+<h3>css</h3>
 
-/* Utilizando variáveis nos estilos */
-.elemento-variavel {
-  color: var(--cor-principal);
-  background-color: var(--cor-secundaria);
-}
-Tags Semânticas em HTML
+![image](https://github.com/erikpablo/Fotoblog/assets/159021301/d5ff10e0-f314-4f9a-a00b-61b1eabb2661)
+
+
+## Tags Semânticas em HTML
+
 As tags semânticas do HTML melhoram a acessibilidade e o SEO do site, descrevendo claramente o conteúdo e a estrutura do documento. Algumas das tags semânticas que usamos neste projeto incluem <header>, <nav>, <main>, <section>, <article>, <footer>.
 
-html
-Copiar código
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Projeto Web</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<h3>html</h3>
 
-  <header>
-    <h1>Bem-vindo ao Meu Projeto</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+![image](https://github.com/erikpablo/Fotoblog/assets/159021301/e66d581b-17fe-4a46-bb33-9f447402a432)
 
-  <main>
-    <section id="home">
-      <h2>Home</h2>
-      <p>Conteúdo da seção Home.</p>
-    </section>
-    <section id="about">
-      <h2>Sobre</h2>
-      <p>Conteúdo da seção Sobre.</p>
-    </section>
-    <section id="contact">
-      <h2>Contato</h2>
-      <p>Conteúdo da seção Contato.</p>
-    </section>
-  </main>
+<h4>
+Este projeto foi incrível, aprendi muito mais sobre CSS avançado, como animações, variações e muito mais. Sem dúvidas, um dos melhores até o momento. Estou muito feliz com meu progresso e desejo melhorar cada vez mais.
+</h4>
 
-  <footer>
-    <p>&copy; 2024 Meu Projeto Web</p>
-  </footer>
-
-</body>
-</html>
