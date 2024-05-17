@@ -9,11 +9,12 @@
 :root {
   font-size: 62.5%;
 
-  --color-base-white: #ffffff;
-  --color-base-gray-100: #f5f5f5;
-  --color-base-gray-300: #8d8d99;
-  --color-base-gray-500: #3D3D3D;
-  --color-base-gray-900: #202024;
+  --hue: 250;
+  --color-base-white: hsl(0, 0%, 100%);
+  --color-base-gray-100: hsl(0, 0%, 96%);
+  --color-base-gray-300: hsl(var(--hue), 60%, 58%);
+  --color-base-gray-500: hsl(0, 0%, 24%);
+  --color-base-gray-900: hsl(var(--hue), 60%, 58%);
 }
 
 html, body, input {
@@ -54,6 +55,10 @@ ul {
   font-weight: bold;
 }
 
+header nav svg {
+  fill: var(--color-base-gray-900);
+}
+
 ul {
   font-size: 1.8rem;
   list-style: none;
@@ -89,7 +94,7 @@ header form {
 }
 
 .input-wrapper input::placeholder {
-  color: var(--color-base-gray-500);
+  color: var(--color-base-gray-900);
   opacity: 0.56;
 }
 
@@ -124,6 +129,8 @@ main h1 {
   transition-timing-function: ease-out;*/
 
   transition: all 200ms ease-out;
+
+  display: block;
 }
 
 .item img:hover {
@@ -169,4 +176,38 @@ footer p {
   color: var(--color-base-gray-900);
   text-align: center;
   padding: 1.6rem;
+}
+
+/* animation */
+
+header {
+  --startY: -100%;
+  animation: move .4s ;
+}
+
+footer {
+  --startY: 100%;
+  animation: move .4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(var(--startY));
+  }
+}
+
+.item {
+  --delay: .4s;
+  animation: appear .4s var(--delay) backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(.7) translateY(calc(100vw - 100% - 20px));
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
 }
